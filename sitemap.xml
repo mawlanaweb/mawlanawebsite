@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Free XML Sitemap Generator: https://slickplan.com/xml-sitemap-generator -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://mawlanaweb.site/</loc>
+  </url>
+  <url>
+    <loc>https://mawlanaweb.site/index.html</loc>
+  </url>
+  <url>
+    <loc>https://mawlanaweb.site/service-details-branding.html</loc>
+  </url>
+  <url>
+    <loc>https://mawlanaweb.site/service-details-oss.html</loc>
+  </url>
+  <url>
+    <loc>https://mawlanaweb.site/service-details-spt.html</loc>
+  </url>
+</urlset>
