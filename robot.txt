@@ -1,0 +1,5 @@
+robots.txt generated
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://mawlanaweb.web.id/index.html
