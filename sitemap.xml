@@ -15,7 +15,17 @@
 <url>
   <loc>https://mawlanaweb.web.id/index.html</loc>
   <lastmod>2025-03-04T03:08:07+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>2.00</priority>
+</url>
+<url>
+  <loc>https://mawlanaweb.web.id/service-details-webdev.html</loc>
+  <lastmod>2025-03-04T03:08:07+00:00</lastmod>
+  <priority>3.00</priority>
+</url>
+<url>
+  <loc>https://mawlanaweb.web.id/service-details-datanalyst.html</loc>
+  <lastmod>2025-03-04T03:08:07+00:00</lastmod>
+  <priority>3.00</priority>
 </url>
 
 
