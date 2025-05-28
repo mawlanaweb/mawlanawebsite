@@ -11,13 +11,19 @@
   <meta name="google-site-verification" content="HnoT5cpt84cV1d9ap8psqIwbkGaqpRpHH-AVQZV4Nys" />
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="DQKNs2xEtMZ0N3ML7xNMMQ" async></script>
 
-<!-- Yandex.Metrika counter -->
+<!-- Kombinasi Tracker: Yandex Metrika, Clarity, Google Tag -->
 <script defer>
-  function loadYandexMetrika() {
-    var script = document.createElement('script');
-    script.src = "https://mc.yandex.ru/metrika/tag.js";
-    script.defer = true;
-    script.onload = function () {
+  function loadTrackers() {
+    // === YANDEX METRIKA ===
+    var ymScript = document.createElement('script');
+    ymScript.src = "https://mc.yandex.ru/metrika/tag.js";
+    ymScript.async = true;
+    ymScript.onload = function () {
+      window.ym = window.ym || function () {
+        (window.ym.a = window.ym.a || []).push(arguments);
+      };
+      window.ym.l = new Date().getTime();
+
       ym(102162382, "init", {
         clickmap: true,
         trackLinks: true,
@@ -26,29 +32,11 @@
         ecommerce: "dataLayer"
       });
     };
-    document.head.appendChild(script);
-  }
+    document.head.appendChild(ymScript);
 
-  // Jalankan setelah DOM siap
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", loadYandexMetrika);
-  } else {
-    loadYandexMetrika();
-  }
-</script>
-
-<noscript>
-  <div>
-    <img src="https://mc.yandex.ru/watch/102162382" style="position:absolute; left:-9999px;" alt="" />
-  </div>
-</noscript>
-<!-- /Yandex.Metrika counter -->
-
-	<!-- Clarity tracking code for https://www.mawlanaweb.web.id/ -->
-<script defer>
-  function loadClarity() {
+    // === MICROSOFT CLARITY ===
     (function(c, l, a, r, i, t, y) {
-      c[a] = c[a] || function() {
+      c[a] = c[a] || function () {
         (c[a].q = c[a].q || []).push(arguments)
       };
       t = l.createElement(r);
@@ -57,19 +45,8 @@
       y = l.getElementsByTagName(r)[0];
       y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "rq25g1e9j5");
-  }
 
-  // Jalankan setelah DOM siap
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", loadClarity);
-  } else {
-    loadClarity();
-  }
-</script>
-	
-	<!-- Google tag (gtag.js) -->
-<script defer>
-  function loadGtag() {
+    // === GOOGLE TAG MANAGER (gtag.js) ===
     var gtagScript = document.createElement('script');
     gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-91Y83805BP";
     gtagScript.async = true;
@@ -77,7 +54,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments); }
       window.gtag = gtag;
-      
+
       gtag('js', new Date());
       gtag('config', 'G-91Y83805BP');
     };
@@ -86,11 +63,18 @@
 
   // Jalankan setelah DOM siap
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", loadGtag);
+    document.addEventListener("DOMContentLoaded", loadTrackers);
   } else {
-    loadGtag();
+    loadTrackers();
   }
 </script>
+
+<!-- Fallback untuk Yandex jika JS dinonaktifkan -->
+<noscript>
+  <div>
+    <img src="https://mc.yandex.ru/watch/102162382" style="position:absolute; left:-9999px;" alt="" />
+  </div>
+</noscript>
 	
   <!-- Favicons -->
   <link href="assets/img/favicon.svg" rel="icon">
