@@ -1,9 +1,9 @@
 /**
-* Template Name: iLanding
-* Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
-* Updated: Nov 12 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Template Name: mawlanaweb
+  * Template URL: https://mawlanaweb.web.id/
+  * Updated: Nov 12 2024 with Bootstrap v5.3.3
+  * Author: mawlanaweb
+  * License: https://bootstrapmade.com/license/
 */
 
 (function() {
@@ -175,3 +175,16 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('.mobile-nav-toggle');
+    const navMenu = document.getElementById('navmenu');
+
+    toggle.addEventListener('click', function () {
+      navMenu.classList.toggle('navmenu-mobile');
+      toggle.classList.toggle('bi-list');
+      toggle.classList.toggle('bi-x');
+    });
+  });
+</script>
