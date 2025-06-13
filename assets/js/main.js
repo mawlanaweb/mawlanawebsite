@@ -176,15 +176,3 @@
 
 })();
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const toggle = document.querySelector('.mobile-nav-toggle');
-    const navMenu = document.getElementById('navmenu');
-
-    toggle.addEventListener('click', function () {
-      navMenu.classList.toggle('navmenu-mobile');
-      toggle.classList.toggle('bi-list');
-      toggle.classList.toggle('bi-x');
-    });
-  });
-</script>
