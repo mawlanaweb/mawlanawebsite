@@ -2328,11 +2328,3 @@ section,
 .starter-section {
   /* Add your styles here */
 }
-
-/* Anti-CLS untuk lazy-loaded images */
-img[loading="lazy"] {
-  aspect-ratio: 4 / 3;
-  width: 100%;
-  height: auto;
-  display: block;
-}
