@@ -2336,3 +2336,14 @@ img[loading="lazy"] {
   height: auto;
   display: block;
 }
+
+/* ============================= */
+/* SECTION: CUSTOM DARK MODE TOGGLE RESPONSIVE */
+/* ============================= */
+@media (max-width: 768px) {
+  #darkModeToggle {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
