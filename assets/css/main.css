@@ -2336,39 +2336,3 @@ img[loading="lazy"] {
   height: auto;
   display: block;
 }
-
-@media (max-width: 768px) {
-  /* Logo di tengah */
-  .header .logo {
-    text-align: center;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .header .logo h1 {
-    font-size: 20px;
-  }
-
-  /* Perkecil padding header */
-  .header .header-container {
-    padding: 8px 15px;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  /* Tombol getstarted ke bawah */
-  .header .btn-getstarted {
-    width: 100%;
-    margin: 10px 0 0 0;
-    padding: 8px;
-    font-size: 14px;
-    text-align: center;
-  }
-
-  /* Pusatkan menu toggle */
-  .mobile-nav-toggle {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-  }
-}
