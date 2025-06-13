@@ -2328,24 +2328,3 @@ section,
 .starter-section {
   /* Add your styles here */
 }
-
-/* Untuk mode mobile aktif */
-.navmenu-mobile {
-  display: block !important;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background: #fff;
-  padding: 1rem;
-  width: 100%;
-  z-index: 999;
-  border-top: 1px solid #ddd;
-}
-
-.navmenu-mobile ul {
-  flex-direction: column;
-}
-
-.navmenu-mobile li {
-  margin: 10px 0;
-}
