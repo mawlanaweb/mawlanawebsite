@@ -170,9 +170,9 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-     <button id="darkModeToggle" class="btn btn-sm btn-dark ms-3" style="border-radius: 20px;">
+     <button id="darkModeToggle" class="btn-darkmode-toggle ms-3">
   🌙 Dark Mode
-    </button>
+     </button>
     <a class="btn-getstarted" href="index.html#about">Mulai</a>
     </div>
   </header>
@@ -847,6 +847,31 @@
   const toggleBtn = document.getElementById('darkModeToggle');
   toggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-background');
+  });
+</script>
+
+	<script>
+  const toggleBtn = document.getElementById("darkModeToggle");
+
+  function updateToggleText(isDark) {
+    toggleBtn.innerHTML = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+  }
+
+  // Inisialisasi berdasarkan preferensi
+  const userTheme = localStorage.getItem("theme");
+  const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  const shouldEnableDark = userTheme === "dark" || (!userTheme && systemPrefersDark);
+  if (shouldEnableDark) {
+    document.body.classList.add("dark-mode");
+  }
+  updateToggleText(document.body.classList.contains("dark-mode"));
+
+  // Toggle saat tombol ditekan
+  toggleBtn.addEventListener("click", () => {
+    const isDark = document.body.classList.toggle("dark-mode");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    updateToggleText(isDark);
   });
 </script>
 
