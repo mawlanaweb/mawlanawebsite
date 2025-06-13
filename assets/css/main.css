@@ -2347,3 +2347,28 @@ img[loading="lazy"] {
     text-align: center;
   }
 }
+
+.btn-darkmode-toggle {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-darkmode-toggle:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode {
+  --background-color: #121212;
+  --default-color: #eeeeee;
+  --heading-color: #ffffff;
+  --surface-color: #1e1e1e;
+  --accent-color: #0d83fd;
+  --contrast-color: #ffffff;
+}
