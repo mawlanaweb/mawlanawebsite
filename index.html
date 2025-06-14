@@ -93,12 +93,10 @@
     document.head.appendChild(gtagScript);
   }
 
-  // Jalankan setelah DOM siap
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", loadTrackers);
-  } else {
-    loadTrackers();
-  }
+  // Tunda 3 detik setelah semua konten halaman termuat
+  window.addEventListener('load', function () {
+    setTimeout(loadTrackers, 3000);
+  });
 </script>
 
 <!-- Fallback untuk Yandex jika JS dinonaktifkan -->
