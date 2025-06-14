@@ -688,11 +688,7 @@ section,
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 .section-title h2:after {
@@ -738,11 +734,11 @@ section,
 }
 
 .hero .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: clamp(1.8rem, 5vw, 3.5rem); /* responsive font size */
   font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
+  ...
 }
+
 
 .hero .hero-content h1 .accent-text {
   color: var(--accent-color);
@@ -968,10 +964,7 @@ section,
 }
 
 .about .about-title {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-  font-weight: 700;
+  font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
 @media (max-width: 992px) {
