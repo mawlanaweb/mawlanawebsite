@@ -216,8 +216,19 @@
 
           <div class="col-lg-6">
             <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
-            <img src="assets/img/mawlanaweb.web.id.webp" alt="Hero Image" class="img-fluid" width="600" height="400" fetchpriority="high" decoding="async">
-
+            <img 
+  src="assets/img/mawlanaweb.web.id.webp"
+  srcset="
+    assets/img/mawlanaweb.web.id-400.webp 400w,
+    assets/img/mawlanaweb.web.id-600.webp 600w,
+    assets/img/mawlanaweb.web.id-800.webp 800w"
+  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+  alt="Hero Image"
+  class="img-fluid"
+  width="600" height="400"
+  loading="lazy"
+  decoding="async"
+  fetchpriority="high">
             </div>
           </div>
         </div>
