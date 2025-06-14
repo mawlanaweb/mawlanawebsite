@@ -2337,38 +2337,3 @@ img[loading="lazy"] {
   display: block;
 }
 
-/* ============================= */
-/* SECTION: CUSTOM DARK MODE TOGGLE RESPONSIVE */
-/* ============================= */
-@media (max-width: 768px) {
-  #darkModeToggle {
-    width: 100%;
-    margin-top: 10px;
-    text-align: center;
-  }
-}
-
-.btn-darkmode-toggle {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  padding: 6px 18px;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-
-.btn-darkmode-toggle:hover {
-  background-color: #222;
-  color: #fff;
-}
-
-body.dark-mode {
-  --background-color: #121212;
-  --default-color: #eeeeee;
-  --heading-color: #ffffff;
-  --surface-color: #1e1e1e;
-  --contrast-color: #ffffff;
-}
-
