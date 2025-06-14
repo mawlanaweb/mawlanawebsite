@@ -736,26 +736,11 @@ section,
 .hero .hero-content h1 {
   font-size: clamp(1.8rem, 5vw, 3.5rem); /* responsive font size */
   font-weight: 700;
-  ...
 }
-
-
-.hero .hero-content h1 .accent-text {
-  color: var(--accent-color);
-}
-
-  .hero .hero-content h1 {
-  }
 
   .hero .hero-content .hero-buttons {
     justify-content: center;
   }
-}
-
-@media (max-width: 575px) {
-  .hero .hero-content h1 {
-  }
-}
 
 .hero .company-badge {
   display: inline-flex;
@@ -2292,13 +2277,6 @@ section,
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
-}
-
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
 }
 
 /* Anti-CLS untuk lazy-loaded images */
