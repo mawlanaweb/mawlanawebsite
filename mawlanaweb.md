@@ -1,152 +1,166 @@
-<style>
-  .features .nav-tabs {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    padding: 6px;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
+Mawlanaweb - Website Optimization Changelog
 
-  .features .nav-item {
-    margin: 0;
-    padding-right: 5px;
-  }
+Target: Skor PageSpeed Mobile ≥ 80
 
-  .features .nav-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    padding: 10px 30px;
-    font-weight: 500;
-    color: var(--heading-color);
-    text-decoration: none;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
+Platform: GitHub PagesFokus: Performa Mobile, Responsivitas, Anti-Layout Shift
 
-  .features .nav-link i {
-    padding-right: 15px;
-    font-size: 36px;
-  }
+✅ 1. Optimasi Gambar Hero & Struktur Responsive
 
-  .features .nav-link h4 {
-    font-size: 14px;
-    margin: 0;
-  }
+File: index.html
 
-  .features .nav-link.active {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
-  }
+Perubahan
 
-  .features .tab-content {
-    margin-top: 30px;
-  }
+Keterangan
 
-  .features .tab-pane h3 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    position: relative;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-  }
+✅ Tambah atribut width & height
 
-  .features .tab-pane h3::after {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    background: var(--accent-color);
-    left: 0;
-    bottom: 0;
-  }
+Semua <img> diberi dimensi eksplisit untuk mencegah CLS
 
-  .features .tab-pane ul {
-    padding: 0;
-    list-style: none;
-  }
+✅ Gunakan srcset & sizes
 
-  .features .tab-pane ul li {
-    padding-top: 10px;
-    font-size: 15px;
-  }
+Gambar hero (mawlanaweb.web.id.webp) diatur responsive untuk berbagai device
 
-  .features .tab-pane ul i {
-    color: var(--accent-color);
-    padding-right: 5px;
-  }
+✅ Aktifkan loading="lazy"
 
-  .features-cards {
-    --default-color: #555;
-    --heading-color: #333;
-  }
+Semua gambar non-above-the-fold menggunakan lazy loading
 
-  .features-cards .feature-box {
-    padding: 2rem;
-    border-radius: 10px;
-    background-color: #fff;
-  }
+✅ 2. Tunda Script Analytics (Non-Blocking)
 
-  .features-cards .feature-box h4 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
+File: index.html
 
-  .features-cards .feature-box p {
-    font-size: 15px;
-    margin-bottom: 0;
-  }
+Perubahan
 
-  .features-2 .feature-item {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 1.5rem;
-  }
+Keterangan
 
-  .features-2 .feature-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: color-mix(in srgb, var(--accent-color), transparent 92%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+✅ Tunda pemanggilan Yandex, Clarity, dan Google Tag Manager
 
-  .features-2 .feature-icon i {
-    color: var(--accent-color);
-    font-size: 24px;
-  }
+Ditunda 3 detik setelah window.load menggunakan setTimeout()
 
-  .features-2 .feature-content h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
+✅ Gunakan async dan onload
 
-  .features-2 .feature-content p {
-    font-size: 15px;
-    color: color-mix(in srgb, var(--default-color), transparent 25%);
-  }
+Memastikan script hanya aktif saat siap, tidak menghambat parsing awal
 
-  @media (max-width: 768px) {
-    .features .nav-tabs {
-      flex-wrap: nowrap;
-    }
+✅ Fallback <noscript> untuk Yandex
 
-    .features .nav-item {
-      flex: 0 0 auto;
-    }
+Tetap tersedia jika JS dinonaktifkan
 
-    .features-2 .feature-item {
-      flex-direction: column;
-      text-align: center;
-    }
-  }
-</style>
+✅ 3. Optimasi Link CSS Eksternal
+
+File: index.html
+
+Perubahan
+
+Keterangan
+
+✅ Google Fonts pakai media=print + onload
+
+Mencegah blocking saat FCP
+
+✅ Vendor CSS (aos, swiper, glightbox) ditunda
+
+Gunakan media="print" dan fallback <noscript> untuk akses penuh
+
+✅ main.css tetap dipanggil normal
+
+Untuk memastikan style utama tetap di-load tepat waktu
+
+✅ 4. Layout Anti-Shift & Anti-Bounce
+
+File: index.html dan main.css
+
+Perubahan
+
+Keterangan
+
+✅ Tambah width & height pada <img>
+
+Menstabilkan layout untuk menghindari CLS
+
+✅ Gunakan aspect-ratio untuk img[loading="lazy"]
+
+Menjaga proporsi gambar sebelum dimuat
+
+✅ 5. Custom CSS untuk Responsivitas Mobile
+
+File: main.css
+
+Perubahan
+
+Keterangan
+
+✅ Tambah @media (max-width: 768px)
+
+Untuk section Hero, tombol CTA, stat-card, nav-tabs, dan layout mobile
+
+✅ Buat .hero-buttons fleksibel
+
+Flex direction column untuk layar kecil
+
+✅ Navigasi tab di .features bisa scroll
+
+Menghindari overflow horizontal fix di mobile
+
+✅ 6. Inline Critical CSS
+
+File: index.html
+
+Perubahan
+
+Keterangan
+
+✅ Inline critical CSS untuk hero & header
+
+Menampilkan elemen penting sebelum CSS eksternal selesai dimuat
+
+✅ Inline critical CSS untuk halaman fitur
+
+Layout tab fitur dan fitur box langsung tampil saat page load
+
+📊 Hasil yang Diharapkan
+
+Metrik
+
+Target
+
+✅ Largest Contentful Paint (LCP)
+
+< 2.5 detik
+
+✅ Cumulative Layout Shift (CLS)
+
+< 0.1
+
+✅ Total Blocking Time (TBT)
+
+< 200ms
+
+✅ First Contentful Paint (FCP)
+
+< 1 detik
+
+✅ PageSpeed Mobile Score
+
+80–95 (tergantung koneksi & device)
+
+💪 File yang Terlibat
+
+index.html
+
+main.css
+
+main.js (tidak diubah langsung, hanya defer jika perlu)
+
+assets/img/*.webp (butuh versi -400.webp, -800.webp, dll)
+
+📌 Rekomendasi Tambahan (Opsional)
+
+🔧 Gunakan Squoosh untuk kompres gambar secara drastis.
+
+📀 Setup GitHub Action untuk:
+
+Minify HTML/CSS
+
+Optimasi gambar saat push
+
+🌐 Tambahkan manifest.json dan meta viewport penuh untuk PWA readiness.
+
