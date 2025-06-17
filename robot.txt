@@ -1,28 +1,6 @@
-# robots.txt untuk www.mawlanaweb.web.id
-# Versi final – optimalisasi SEO, keamanan, dan efisiensi crawling
-
 User-agent: *
-# Blokir direktori internal dan sensitif
 Disallow: /admin/
-Disallow: /private/
-Disallow: /temp/
-Disallow: /draft/
-Disallow: /testing/
-
-# Blokir file tidak relevan dari hasil pencarian
-Disallow: /*.pdf$
-Disallow: /*.doc$
-Disallow: /*.zip$
-Disallow: /*.xlsx$
-Disallow: /*.csv$
-Disallow: /CHANGELOG.md
-
-# Jika Anda memiliki halaman pencarian internal
-# Disallow: /search/
-# Disallow: /query/
-
-# Izinkan crawling semua halaman publik
+Disallow: /forms/
 Allow: /
 
-# Lokasi sitemap XML
 Sitemap: https://www.mawlanaweb.web.id/sitemap.xml
