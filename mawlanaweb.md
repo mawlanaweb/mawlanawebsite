@@ -1,166 +1,43 @@
-Mawlanaweb - Website Optimization Changelog
+# Changelog – www.mawlanaweb.web.id
 
-Target: Skor PageSpeed Mobile ≥ 80
+Semua perubahan penting pada situs ini akan didokumentasikan di sini.
 
-Platform: GitHub PagesFokus: Performa Mobile, Responsivitas, Anti-Layout Shift
+## [1.3.0] – 2025-06-15
+### Ditambahkan
+- Halaman fitur baru:
+  - **Legalitas Usaha** (layanan pembuatan PT, CV, NIB, NPWP, dsb)
+  - **Virtual Assistant** (layanan administratif jarak jauh)
+  - **Database Administrator** (pengelolaan basis data proyek)
+- Critical CSS di-*inline* untuk peningkatan kecepatan render halaman.
+- Optimalisasi tampilan mobile (responsif dan teks fleksibel).
 
-✅ 1. Optimasi Gambar Hero & Struktur Responsive
+### Diperbaiki
+- Struktur `main.css` diperbarui untuk mengurangi render-blocking.
+- Kode HTML diformat ulang agar lebih bersih dan konsisten.
 
-File: index.html
+---
 
-Perubahan
+## [1.2.0] – 2025-05-10
+### Ditambahkan
+- Informasi kontak lengkap di halaman kontak.
+- Meta tag SEO dan OG (Open Graph) untuk berbagi sosial.
 
-Keterangan
+### Diperbaiki
+- Validasi formulir kontak.
+- Tampilan halaman kontak di perangkat kecil.
 
-✅ Tambah atribut width & height
+---
 
-Semua <img> diberi dimensi eksplisit untuk mencegah CLS
+## [1.1.0] – 2025-03-01
+### Ditambahkan
+- Profil tim Mawlanaweb: Web Developer, Data Analyst, Tax Officer, IT Support.
 
-✅ Gunakan srcset & sizes
+### Diubah
+- Skema warna dan tipografi diperbarui agar lebih ramah pengguna.
 
-Gambar hero (mawlanaweb.web.id.webp) diatur responsive untuk berbagai device
+---
 
-✅ Aktifkan loading="lazy"
-
-Semua gambar non-above-the-fold menggunakan lazy loading
-
-✅ 2. Tunda Script Analytics (Non-Blocking)
-
-File: index.html
-
-Perubahan
-
-Keterangan
-
-✅ Tunda pemanggilan Yandex, Clarity, dan Google Tag Manager
-
-Ditunda 3 detik setelah window.load menggunakan setTimeout()
-
-✅ Gunakan async dan onload
-
-Memastikan script hanya aktif saat siap, tidak menghambat parsing awal
-
-✅ Fallback <noscript> untuk Yandex
-
-Tetap tersedia jika JS dinonaktifkan
-
-✅ 3. Optimasi Link CSS Eksternal
-
-File: index.html
-
-Perubahan
-
-Keterangan
-
-✅ Google Fonts pakai media=print + onload
-
-Mencegah blocking saat FCP
-
-✅ Vendor CSS (aos, swiper, glightbox) ditunda
-
-Gunakan media="print" dan fallback <noscript> untuk akses penuh
-
-✅ main.css tetap dipanggil normal
-
-Untuk memastikan style utama tetap di-load tepat waktu
-
-✅ 4. Layout Anti-Shift & Anti-Bounce
-
-File: index.html dan main.css
-
-Perubahan
-
-Keterangan
-
-✅ Tambah width & height pada <img>
-
-Menstabilkan layout untuk menghindari CLS
-
-✅ Gunakan aspect-ratio untuk img[loading="lazy"]
-
-Menjaga proporsi gambar sebelum dimuat
-
-✅ 5. Custom CSS untuk Responsivitas Mobile
-
-File: main.css
-
-Perubahan
-
-Keterangan
-
-✅ Tambah @media (max-width: 768px)
-
-Untuk section Hero, tombol CTA, stat-card, nav-tabs, dan layout mobile
-
-✅ Buat .hero-buttons fleksibel
-
-Flex direction column untuk layar kecil
-
-✅ Navigasi tab di .features bisa scroll
-
-Menghindari overflow horizontal fix di mobile
-
-✅ 6. Inline Critical CSS
-
-File: index.html
-
-Perubahan
-
-Keterangan
-
-✅ Inline critical CSS untuk hero & header
-
-Menampilkan elemen penting sebelum CSS eksternal selesai dimuat
-
-✅ Inline critical CSS untuk halaman fitur
-
-Layout tab fitur dan fitur box langsung tampil saat page load
-
-📊 Hasil yang Diharapkan
-
-Metrik
-
-Target
-
-✅ Largest Contentful Paint (LCP)
-
-< 2.5 detik
-
-✅ Cumulative Layout Shift (CLS)
-
-< 0.1
-
-✅ Total Blocking Time (TBT)
-
-< 200ms
-
-✅ First Contentful Paint (FCP)
-
-< 1 detik
-
-✅ PageSpeed Mobile Score
-
-80–95 (tergantung koneksi & device)
-
-💪 File yang Terlibat
-
-index.html
-
-main.css
-
-main.js (tidak diubah langsung, hanya defer jika perlu)
-
-assets/img/*.webp (butuh versi -400.webp, -800.webp, dll)
-
-📌 Rekomendasi Tambahan (Opsional)
-
-🔧 Gunakan Squoosh untuk kompres gambar secara drastis.
-
-📀 Setup GitHub Action untuk:
-
-Minify HTML/CSS
-
-Optimasi gambar saat push
-
-🌐 Tambahkan manifest.json dan meta viewport penuh untuk PWA readiness.
-
+## [1.0.0] – 2025-01-20
+### Ditambahkan
+- Peluncuran perdana situs.
+- Halaman utama, deskripsi layanan awal, dan footer berlisensi CC BY-NC-ND 4.
