@@ -1,43 +1,75 @@
-# Changelog – www.mawlanaweb.web.id
+# 🌐 Mawlanaweb – Layanan Digital & Profesional
 
-Semua perubahan penting pada situs ini akan didokumentasikan di sini.
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.mawlanaweb.web.id)](https://www.mawlanaweb.web.id)
+[![License](https://img.shields.io/badge/license-GPLv3-blue)](https://www.gnu.org/licenses/gpl-3.0.html)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Mobile Friendly](https://img.shields.io/badge/mobile-friendly-success)
 
-## [1.3.0] – 2025-06-15
-### Ditambahkan
-- Halaman fitur baru:
-  - **Legalitas Usaha** (layanan pembuatan PT, CV, NIB, NPWP, dsb)
-  - **Virtual Assistant** (layanan administratif jarak jauh)
-  - **Database Administrator** (pengelolaan basis data proyek)
-- Critical CSS di-*inline* untuk peningkatan kecepatan render halaman.
-- Optimalisasi tampilan mobile (responsif dan teks fleksibel).
+## ✨ Tentang
 
-### Diperbaiki
-- Struktur `main.css` diperbarui untuk mengurangi render-blocking.
-- Kode HTML diformat ulang agar lebih bersih dan konsisten.
+**Mawlanaweb** adalah situs penyedia layanan profesional berbasis digital. Kami membantu individu, UMKM, dan instansi sejak 2016 dalam hal teknologi, data, dan legalitas usaha.
+
+🧠 Kami berfokus pada **kecepatan layanan**, **hasil nyata**, dan **pendekatan legal & praktis**.
+
+> Situs utama: [https://www.mawlanaweb.web.id](https://www.mawlanaweb.web.id)
 
 ---
 
-## [1.2.0] – 2025-05-10
-### Ditambahkan
-- Informasi kontak lengkap di halaman kontak.
-- Meta tag SEO dan OG (Open Graph) untuk berbagi sosial.
+## 📌 Daftar Layanan
 
-### Diperbaiki
-- Validasi formulir kontak.
-- Tampilan halaman kontak di perangkat kecil.
-
----
-
-## [1.1.0] – 2025-03-01
-### Ditambahkan
-- Profil tim Mawlanaweb: Web Developer, Data Analyst, Tax Officer, IT Support.
-
-### Diubah
-- Skema warna dan tipografi diperbarui agar lebih ramah pengguna.
+| Layanan             | Deskripsi Singkat                                          |
+|---------------------|-------------------------------------------------------------|
+| 💻 Web Developer     | Website landing page, company profile, toko online         |
+| 📊 Data Analyst      | Analisis data, visualisasi, dashboard bisnis               |
+| 🛠️ IT Support        | Troubleshooting, support jaringan, pelatihan IT            |
+| 🗄️ Database Admin     | Manajemen MySQL/PostgreSQL, backup, optimasi DB            |
+| 🧾 Konsultan Pajak    | Pelaporan SPT, efisiensi fiskal, pendampingan PPh & PPN    |
+| 📄 Legalitas Usaha   | NIB, OSS, NPWP, SIUP, SK Kemenkumham, akta notaris         |
 
 ---
 
-## [1.0.0] – 2025-01-20
-### Ditambahkan
-- Peluncuran perdana situs.
-- Halaman utama, deskripsi layanan awal, dan footer berlisensi CC BY-NC-ND 4.
+## 📂 Struktur Situs
+
+index.html
+├── service-details.html
+├── service-details-webdev.html
+├── service-details-datanalyst.html
+├── service-details-itsupport.html
+├── service-details-database.html
+├── service-details-taxofficer.html
+├── service-details-legalitas.html
+├── privacy-commitment.html
+├── sitemap.xml
+└── robots.txt
+
+
+---
+
+## 🚀 Fitur Teknis
+
+- ✅ SEO-friendly meta tags (title, description, keywords)
+- ✅ Schema JSON-LD untuk semua halaman layanan
+- ✅ Open Graph + Twitter Card (share-optimized)
+- ✅ Sitemap & robots.txt untuk indexing optimal
+- ✅ Fully responsive layout (mobile-first)
+- ✅ Clean Bootstrap 5.3 template
+
+---
+
+## 📬 Kontak
+
+- 📧 Email: [admin@mawlanaweb.web.id](mailto:admin@mawlanaweb.web.id)
+- 🌐 Situs: [mawlanaweb.web.id](https://www.mawlanaweb.web.id)
+- 🔗 [Instagram](https://instagram.com/mawlanaweb.id)
+- 🔗 [LinkedIn](https://linkedin.com/in/mawlanaweb)
+
+---
+
+## 📄 Lisensi
+
+Proyek ini menggunakan lisensi [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html).  
+Template berbasis BootstrapMade dengan modifikasi dan optimasi SEO oleh Mawlanaweb.
+
+---
+
+> Made with ❤️ by [mawlanaweb](https://www.mawlanaweb.web.id)
