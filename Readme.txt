@@ -3,7 +3,7 @@
 ====================================================
 
 URL     : https://www.mawlanaweb.web.id/
-Versi   : 1.0.0
+Versi   : v1.3.0
 Update  : 18 Juni 2025
 Author  : mawlanaweb
 Lisensi : GPLv3 / BootstrapMade
