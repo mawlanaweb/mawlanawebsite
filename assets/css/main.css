@@ -2353,3 +2353,9 @@ img[loading="lazy"] {
     padding: 0.5rem 1.5rem;
     font-size: 14px;
   }
+
+@media (max-width: 359px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
