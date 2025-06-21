@@ -179,6 +179,17 @@ h6 {
   color: var(--heading-color);
 }
 
+/* Tambahan untuk memastikan sitename tidak terpotong */
+.header .sitename {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  font-size: 1.5rem;
+  font-weight: 600;
+  max-width: 100%;
+  display: inline-block;
+}
+
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
