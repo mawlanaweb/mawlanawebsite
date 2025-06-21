@@ -27,11 +27,15 @@
    */
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
-  function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
-    mobileNavToggleBtn.classList.toggle('bi-list');
-    mobileNavToggleBtn.classList.toggle('bi-x');
-  }
+function mobileNavToogle() {
+  const body = document.querySelector('body');
+  const isActive = body.classList.toggle('mobile-nav-active');
+  mobileNavToggleBtn.classList.toggle('bi-list');
+  mobileNavToggleBtn.classList.toggle('bi-x');
+
+  // Update aria-expanded attribute
+  mobileNavToggleBtn.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+}
   if (mobileNavToggleBtn) {
     mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
   }
