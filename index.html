@@ -1047,20 +1047,31 @@ var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
   s0.parentNode.insertBefore(s1, s0);
 })();
 </script>
-<!--End of Tawk.to Script-->
 
-<!-- Custom Auto Trigger -->
+<!-- Custom Auto Trigger + Reposition -->
 <script type="text/javascript">
 Tawk_API = Tawk_API || {};
 Tawk_API.onLoad = function() {
+  // Auto-open chat setelah 5 detik
   setTimeout(function(){
-    Tawk_API.maximize(); // Membuka chat otomatis
-    Tawk_API.addEvent('autogreeting'); // Bisa tracking via analytics
-  }, 5000); // Delay 5 detik
+    Tawk_API.maximize();
+    Tawk_API.addEvent('autogreeting');
+  }, 5000);
+
+  // Geser posisi ke kiri
+  const repositionTawk = setInterval(() => {
+    const iframe = document.querySelector("iframe[title='chat widget']");
+    if (iframe) {
+      iframe.style.right = 'auto';
+      iframe.style.left = '10px'; // ubah sesuai kebutuhan
+      clearInterval(repositionTawk);
+    }
+  }, 500); // cek setiap 0.5 detik sampai iframe muncul
 };
 </script>
+<!--End of Tawk.to Script-->
 
-	
+
 </body>
 
 </html>
