@@ -2393,3 +2393,12 @@ img[loading="lazy"] {
     padding-right: 10px;
   }
 }
+
+/*--------------------------------------------------------------
+# FAQ Banner Image Responsive Fix
+--------------------------------------------------------------*/
+.faq-banner img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
