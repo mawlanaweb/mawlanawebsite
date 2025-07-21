@@ -1,56 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Homepage -->
+ <!-- Halaman Utama -->
   <url>
-    <loc>https://www.mawlanaweb.web.id/</loc>
-    <lastmod>2025-06-18T09:00:00+07:00</lastmod>
+    <loc>https://mawlanaweb.web.id/</loc>
+    <lastmod>2025-07-12T03:25:08+00:00</lastmod>
     <priority>1.00</priority>
   </url>
 
-  <!-- Legal & Komitmen -->
+  <!-- Index -->
   <url>
-    <loc>https://www.mawlanaweb.web.id/privacy-commitment.html</loc>
-    <lastmod>2025-06-18T09:00:00+07:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.mawlanaweb.web.id/service-details-legalitas.html</loc>
-    <lastmod>2025-06-18T09:00:00+07:00</lastmod>
+    <loc>https://mawlanaweb.web.id/index.html</loc>
+    <lastmod>2025-07-12T03:25:08+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
-  <!-- Halaman Induk -->
+  <!-- Tentang dan Kontak -->
   <url>
-    <loc>https://www.mawlanaweb.web.id/service-details.html</loc>
-    <lastmod>2025-06-18T09:00:00+07:00</lastmod>
+    <loc>https://mawlanaweb.web.id/tentang-saya.html</loc>
+    <lastmod>2025-07-12T03:25:08+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mawlanaweb.web.id/kontak-saya.html</loc>
+    <lastmod>2025-07-12T03:25:08+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
-  <!-- Layanan Individu -->
+  <!-- FAQ -->
   <url>
-    <loc>https://www.mawlanaweb.web.id/service-details-webdev.html</loc>
-    <lastmod>2025-06-18T09:00:00+07:00</lastmod>
+    <loc>https://mawlanaweb.web.id/faq.html</loc>
+    <lastmod>2025-07-12T03:25:08+00:00</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Privacy & Legalitas -->
+  <url>
+    <loc>https://mawlanaweb.web.id/privacy-commitment.html</loc>
+    <lastmod>2025-07-12T03:25:08+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.mawlanaweb.web.id/service-details-datanalyst.html</loc>
-    <lastmod>2025-06-18T09:00:00+07:00</lastmod>
+    <loc>https://mawlanaweb.web.id/service-details-legalitas.html</loc>
+    <lastmod>2025-07-12T03:25:08+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Halaman Layanan -->
+  <url>
+    <loc>https://mawlanaweb.web.id/service-details.html</loc>
+    <lastmod>2025-07-12T03:25:08+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.mawlanaweb.web.id/service-details-itsupport.html</loc>
-    <lastmod>2025-06-18T09:00:00+07:00</lastmod>
+    <loc>https://mawlanaweb.web.id/service-details-webdev.html</loc>
+    <lastmod>2025-07-12T03:25:08+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.mawlanaweb.web.id/service-details-database.html</loc>
-    <lastmod>2025-06-18T09:00:00+07:00</lastmod>
+    <loc>https://mawlanaweb.web.id/service-details-datanalyst.html</loc>
+    <lastmod>2025-07-12T03:25:08+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.mawlanaweb.web.id/service-details-taxofficer.html</loc>
-    <lastmod>2025-06-18T09:00:00+07:00</lastmod>
+    <loc>https://mawlanaweb.web.id/service-details-itsupport.html</loc>
+    <lastmod>2025-07-12T03:25:08+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mawlanaweb.web.id/service-details-database.html</loc>
+    <lastmod>2025-07-12T03:25:08+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://mawlanaweb.web.id/service-details-taxofficer.html</loc>
+    <lastmod>2025-07-12T03:25:08+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
