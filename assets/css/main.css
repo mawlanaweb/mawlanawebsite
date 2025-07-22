@@ -2402,3 +2402,12 @@ img[loading="lazy"] {
   height: auto;
   object-fit: contain;
 }
+
+.white-link {
+  color: white;
+  text-decoration: none;
+}
+.white-link:hover {
+  color: #f0f0f0;
+  text-decoration: underline;
+}
