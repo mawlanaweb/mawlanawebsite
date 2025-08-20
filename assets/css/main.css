@@ -2411,3 +2411,116 @@ img[loading="lazy"] {
   color: #f0f0f0;
   text-decoration: underline;
 }
+
+/* Container tombol scroll */
+.scroll-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 9999;
+}
+
+/* Tombol dasar */
+.scroll-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: var(--accent-color, #0d6efd);
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.scroll-btn:hover {
+  background: #333;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Aktif terlihat */
+.scroll-btn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+/* Abstract Shapes */
+.shape {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.15;
+}
+
+.shape-1 {
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: url("../img/shapes/shape-1.svg") no-repeat center/contain;
+}
+
+.shape-2 {
+  bottom: 0;
+  right: -80px;
+  width: 250px;
+  height: 250px;
+  background: url("../img/shapes/shape-2.svg") no-repeat center/contain;
+}
+
+.shape-3 {
+  bottom: -60px;
+  left: 20px;
+  width: 220px;
+  height: 220px;
+  background: url("../img/shapes/shape-3.svg") no-repeat center/contain;
+}
+
+/* Dot Patterns */
+.dots {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+.dots-1 {
+  top: 100px;
+  left: -40px;
+  width: 100px;
+  height: 100px;
+  background: url("../img/shapes/dots-1.svg") repeat;
+}
+
+.dots-2 {
+  bottom: 50px;
+  right: -40px;
+  width: 100px;
+  height: 100px;
+  background: url("../img/shapes/dots-2.svg") repeat;
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.faq-item.faq-active .faq-content {
+  max-height: 300px; /* atur sesuai panjang konten */
+}
+
+.faq-toggle {
+  transition: transform 0.3s ease;
+}
+.faq-item.faq-active .faq-toggle {
+  transform: rotate(90deg);
+}
