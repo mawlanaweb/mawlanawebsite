@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
+  <!-- ============================= -->
+  <!-- 🔹 META DASAR & TEKNIS -->
+  <!-- ============================= -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0d83fd" />
+  <meta name="theme-color" content="#0d83fd">
+
   <title>Mawlanaweb – Jasa Web Dev, Database, Pajak & Legalitas Usaha</title>
+  <link rel="canonical" href="https://mawlanaweb.web.id/">
+
+  <!-- Preload Hero Image (untuk LCP) -->
   <link rel="preload" as="image" href="assets/img/mawlanaweb.web.id.webp" fetchpriority="high" type="image/webp">
-  <link rel="canonical" href="https://mawlanaweb.web.id/" />
-	
+
+  <!-- ============================= -->
+  <!-- 🔹 SEO META -->
+  <!-- ============================= -->
   <meta name="description" content="Layanan digital profesional: Web Developer, Data Analyst, IT Support, Pajak, Database, dan Legalitas Usaha. Praktis, terpercaya & siap bantu UMKM dan personal.">
   <meta name="keywords" content="mawlanaweb, jasa web developer, database administrator, IT support aceh, konsultan pajak aceh, legalitas usaha online, data analyst UMKM">
   <meta name="author" content="mawlanaweb">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Mawlanaweb – Layanan Digital Profesional">
-<meta property="og:description" content="Jasa Web Developer, IT Support, Pajak, Database & Legalitas Usaha. Solusi cepat & terpercaya untuk bisnis dan personal.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.mawlanaweb.web.id/">
-<meta property="og:image" content="https://www.mawlanaweb.web.id/assets/img/mawlanaweb_socmed.webp">
+  <!-- ============================= -->
+  <!-- 🔹 OPEN GRAPH (FB, LinkedIn, WhatsApp) -->
+  <!-- ============================= -->
+  <meta property="og:title" content="Mawlanaweb – Layanan Digital Profesional">
+  <meta property="og:description" content="Jasa Web Developer, IT Support, Pajak, Database & Legalitas Usaha. Solusi cepat & terpercaya untuk bisnis dan personal.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.mawlanaweb.web.id/">
+  <meta property="og:image" content="https://www.mawlanaweb.web.id/assets/img/mawlanaweb_socmed.webp">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mawlanaweb – Layanan Digital & Profesional">
-<meta name="twitter:description" content="Jasa Web, IT Support, Pajak, Legalitas Usaha. Dikerjakan profesional, harga terjangkau.">
-<meta name="twitter:image" content="https://www.mawlanaweb.web.id/assets/img/mawlanaweb_socmed.webp">
+  <!-- ============================= -->
+  <!-- 🔹 TWITTER CARD -->
+  <!-- ============================= -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mawlanaweb – Layanan Digital & Profesional">
+  <meta name="twitter:description" content="Jasa Web, IT Support, Pajak, Legalitas Usaha. Dikerjakan profesional, harga terjangkau.">
+  <meta name="twitter:image" content="https://www.mawlanaweb.web.id/assets/img/mawlanaweb_socmed.webp">
 
-  <meta name="p:domain_verify" content="7828e3e3ea8e753599fa68c6da387433"/>
-  <meta name="msvalidate.01" content="82D52A234C89B2AEA67BC42C4D8D3440" />
-  <meta name="google-site-verification" content="HnoT5cpt84cV1d9ap8psqIwbkGaqpRpHH-AVQZV4Nys" />
-  <script src="https://analytics.ahrefs.com/analytics.js" data-key="DQKNs2xEtMZ0N3ML7xNMMQ" async></script>
+  <!-- ============================= -->
+  <!-- 🔹 SEARCH ENGINE VERIFICATION -->
+  <!-- ============================= -->
+  <meta name="msvalidate.01" content="82D52A234C89B2AEA67BC42C4D8D3440">
+  <meta name="google-site-verification" content="HnoT5cpt84cV1d9ap8psqIwbkGaqpRpHH-AVQZV4Nys">
+
 	
- <!-- Breadcrumb -->
- <script type="application/ld+json">
+ <!-- ============================= -->
+<!-- 🔹 SCHEMA.ORG STRUCTURED DATA -->
+<!-- ============================= -->
+
+<!-- BreadcrumbList -->
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -45,7 +63,7 @@
 }
 </script>
 
-<!-- WebSite schema with SearchAction -->
+<!-- WebSite + SearchAction -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -59,246 +77,50 @@
   }
 }
 </script>
-
-<!-- Kombinasi Tracker: Yandex Metrika, Clarity, Google Tag -->
-<script defer>
-  function loadTrackers() {
-    // === YANDEX METRIKA ===
-    var ymScript = document.createElement('script');
-    ymScript.src = "https://mc.yandex.ru/metrika/tag.js";
-    ymScript.async = true;
-    ymScript.onload = function () {
-      window.ym = window.ym || function () {
-        (window.ym.a = window.ym.a || []).push(arguments);
-      };
-      window.ym.l = new Date().getTime();
-
-      ym(102162382, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true,
-        ecommerce: "dataLayer"
-      });
-    };
-    document.head.appendChild(ymScript);
-
-    // === MICROSOFT CLARITY ===
-    (function(c, l, a, r, i, t, y) {
-      c[a] = c[a] || function () {
-        (c[a].q = c[a].q || []).push(arguments)
-      };
-      t = l.createElement(r);
-      t.async = true;
-      t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
-      y = l.getElementsByTagName(r)[0];
-      y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", "rq25g1e9j5");
-
-    // === GOOGLE TAG MANAGER (gtag.js) ===
-    var gtagScript = document.createElement('script');
-    gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-91Y83805BP";
-    gtagScript.async = true;
-    gtagScript.onload = function () {
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      window.gtag = gtag;
-
-      gtag('js', new Date());
-      gtag('config', 'G-91Y83805BP');
-    };
-    document.head.appendChild(gtagScript);
-  }
-
-  // Tunda 3 detik setelah semua konten halaman termuat
-  window.addEventListener('load', function () {
-    setTimeout(loadTrackers, 3000);
-  });
-</script>
-
-<!-- Fallback untuk Yandex jika JS dinonaktifkan -->
-<noscript>
-  <div>
-    <img src="https://mc.yandex.ru/watch/102162382" style="position:absolute; left:-9999px;" alt="" />
-  </div>
-</noscript>
 	
-  <!-- Favicons -->
-  <link href="assets/img/favicon.svg" rel="icon">
-  <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+  <!-- ============================= -->
+  <!-- 🔹 FAVICONS -->
+  <!-- ============================= -->
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"></noscript>
+<!-- ============================= -->
+<!-- 🔹 GOOGLE FONTS -->
+<!-- ============================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'">
+<noscript>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+</noscript>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendor/aos/aos.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" media="print" onload="this.media='all'">
-  <noscript>
+<!-- ============================= -->
+<!-- 🔹 VENDOR CSS FILES -->
+<!-- ============================= -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/css/main.css" rel="stylesheet">
+
+<!-- Async/Lazy load untuk CSS tambahan -->
+<link rel="stylesheet" href="assets/vendor/aos/aos.css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="assets/css/chat.css">
+
+<!-- Fallback untuk non-JS -->
+<noscript>
   <link rel="stylesheet" href="assets/vendor/aos/aos.css">
   <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
   <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
-  </noscript>
+  <link rel="stylesheet" href="assets/css/features.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="assets/css/features.css"></noscript>
 
-  <!-- Main CSS File -->
-	<style>
-  .features .nav-tabs {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    padding: 6px;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-
-  .features .nav-item {
-    margin: 0;
-    padding-right: 5px;
-  }
-
-  .features .nav-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    padding: 10px 30px;
-    font-weight: 500;
-    color: var(--heading-color);
-    text-decoration: none;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-
-  .features .nav-link i {
-    padding-right: 15px;
-    font-size: 36px;
-  }
-
-  .features .nav-link h4 {
-    font-size: 14px;
-    margin: 0;
-  }
-
-  .features .nav-link.active {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
-  }
-
-  .features .tab-content {
-    margin-top: 30px;
-  }
-
-  .features .tab-pane h3 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    position: relative;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .features .tab-pane h3::after {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    background: var(--accent-color);
-    left: 0;
-    bottom: 0;
-  }
-
-  .features .tab-pane ul {
-    padding: 0;
-    list-style: none;
-  }
-
-  .features .tab-pane ul li {
-    padding-top: 10px;
-    font-size: 15px;
-  }
-
-  .features .tab-pane ul i {
-    color: var(--accent-color);
-    padding-right: 5px;
-  }
-
-  .features-cards {
-    --default-color: #555;
-    --heading-color: #333;
-  }
-
-  .features-cards .feature-box {
-    padding: 2rem;
-    border-radius: 10px;
-    background-color: #fff;
-  }
-
-  .features-cards .feature-box h4 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-
-  .features-cards .feature-box p {
-    font-size: 15px;
-    margin-bottom: 0;
-  }
-
-  .features-2 .feature-item {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 1.5rem;
-  }
-
-  .features-2 .feature-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: color-mix(in srgb, var(--accent-color), transparent 92%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .features-2 .feature-icon i {
-    color: var(--accent-color);
-    font-size: 24px;
-  }
-
-  .features-2 .feature-content h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-
-  .features-2 .feature-content p {
-    font-size: 15px;
-    color: color-mix(in srgb, var(--default-color), transparent 25%);
-  }
-
-  @media (max-width: 768px) {
-    .features .nav-tabs {
-      flex-wrap: nowrap;
-    }
-
-    .features .nav-item {
-      flex: 0 0 auto;
-    }
-
-    .features-2 .feature-item {
-      flex-direction: column;
-      text-align: center;
-    }
-  }
-  </style>
-  <link href="assets/css/main.css" rel="stylesheet">
+</noscript>
+  
   <!-- =======================================================
   * Template Name: mawlanaweb
   * Template URL: https://mawlanaweb.web.id/
@@ -315,7 +137,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-	<!-- <img src="assets/img/logo.png" alt=""> -->
+	    <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">mawlanaweb</h1>
       </a>
 	    
@@ -358,23 +180,18 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-              <div class="company-badge mb-4">
-                <i class="bi bi-airplane-engines"></i>
-                     Transformasi Digital
+              <div class="company-badge">
+              <i class="bi bi-airplane-engines"></i> Transformasi Digital
               </div>
-
               <h2 class="mb-4">
                  <br>
                Dukungan IT <br>
                 <span class="accent-text">Profesional & Terpercaya</span>
               </h2>
-
               <p class="mb-4 mb-md-5">
                 Saya mengintegrasikan keahlian di berbagai bidang untuk membantu individu dan bisnis menyederhanakan alur kerja, membangun kehadiran digital yang efektif, serta meningkatkan efisiensi operasional. Dengan pendekatan strategis dan solusi yang terarah, saya berkomitmen memberikan layanan yang mendukung produktivitas dan mendorong pertumbuhan berkelanjutan.
               </p>
@@ -398,7 +215,7 @@
     assets/img/mawlanaweb.web.id-600.webp 600w,
     assets/img/mawlanaweb.web.id-800.webp 800w"
   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-  alt="Hero Image"
+  alt="Mawlanaweb Image"
   class="img-fluid"
   width="600" height="400"
   decoding="async"
@@ -494,13 +311,13 @@
                     <img src="assets/img/pp.webp" alt="CEO Profile" class="profile-image" loading="lazy" width="120" height="120">
 
                     <div>
-                       <h4 class="profile-name">mawlana.aris</h4>
+                      <h4 class="profile-name">mawlana.aris</h4>
                       <p class="profile-position">
-		      <a href="https://mawlanaweb.web.id/tentang-saya.html" target="_blank" rel="noopener noreferrer">
-                       CEO &amp; Founder
+					  <a href="https://mawlanaweb.web.id/tentang-saya.html" target="_blank" rel="noopener noreferrer">
+                      CEO &amp; Founder
                     </a>
-		    </p>
-			    
+                    </p>
+					
                     </div>
                   </div>
                 </div>
@@ -508,10 +325,10 @@
                   <div class="contact-info d-flex align-items-center gap-2">
                     <i class="bi bi-person-raised-hand"></i>
                     <div>
-                      <h4 class="contact-label">Tentang Saya</h4>
+                      <h4 class="contact-label">Siap Berkolaborasi?</h4>
                       <p class="contact-number">
                       <a href="https://mawlanaweb.web.id/tentang-saya.html" target="_blank" rel="noopener noreferrer">
-                      Eksplorasi
+                      Tentang Saya
                     </a>
                     </p>
 
@@ -748,111 +565,57 @@
 
     </section><!-- /Features 2 Section -->
 
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section">
+         <!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section">
+
+  <div class="container" data-aos="fade-up">
+
+    <!-- Background Shapes -->
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="dots dots-1"></div>
+    <div class="dots dots-2"></div>
+
+    <div class="content">
+      <h3>Tingkatkan Bisnis Anda Bersama Kami</h3>
+      <p>Kami membantu UMKM, Startup, dan Perusahaan dalam transformasi digital yang efektif.</p>
+      <a href="#contact" class="btn btn-primary">Hubungi Kami</a>
+    </div>
+
+  </div>
+
+</section>
+<!-- /Call To Action Section -->
 
 
-          <!-- Abstract Background Elements -->
-          <div class="shape shape-1">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              <path d="M47.1,-57.1C59.9,-45.6,68.5,-28.9,71.4,-10.9C74.2,7.1,71.3,26.3,61.5,41.1C51.7,55.9,35,66.2,16.9,69.2C-1.3,72.2,-21,67.8,-36.9,57.9C-52.8,48,-64.9,32.6,-69.1,15.1C-73.3,-2.4,-69.5,-22,-59.4,-37.1C-49.3,-52.2,-32.8,-62.9,-15.7,-64.9C1.5,-67,34.3,-68.5,47.1,-57.1Z" transform="translate(100 100)"></path>
-            </svg>
-          </div>
+<!-- Clients Section -->
+<section id="clients" class="clients section">
 
-          <div class="shape shape-2">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              <path d="M41.3,-49.1C54.4,-39.3,66.6,-27.2,71.1,-12.1C75.6,3,72.4,20.9,63.3,34.4C54.2,47.9,39.2,56.9,23.2,62.3C7.1,67.7,-10,69.4,-24.8,64.1C-39.7,58.8,-52.3,46.5,-60.1,31.5C-67.9,16.4,-70.9,-1.4,-66.3,-16.6C-61.8,-31.8,-49.7,-44.3,-36.3,-54C-22.9,-63.7,-8.2,-70.6,3.6,-75.1C15.4,-79.6,28.2,-58.9,41.3,-49.1Z" transform="translate(100 100)"></path>
-            </svg>
-          </div>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-          <!-- Dot Pattern Groups -->
-          <div class="dots dots-1">
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-              <pattern id="dot-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
-              </pattern>
-              <rect width="100" height="100" fill="url(#dot-pattern)"></rect>
-            </svg>
-          </div>
-
-          <div class="dots dots-2">
-            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-              <pattern id="dot-pattern-2" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
-              </pattern>
-              <rect width="100" height="100" fill="url(#dot-pattern-2)"></rect>
-            </svg>
-          </div>
-
-          <div class="shape shape-3">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              <path d="M43.3,-57.1C57.4,-46.5,71.1,-32.6,75.3,-16.2C79.5,0.2,74.2,19.1,65.1,35.3C56,51.5,43.1,65,27.4,71.7C11.7,78.4,-6.8,78.3,-23.9,72.4C-41,66.5,-56.7,54.8,-65.4,39.2C-74.1,23.6,-75.8,4,-71.7,-13.2C-67.6,-30.4,-57.7,-45.2,-44.3,-56.1C-30.9,-67,-15.5,-74,0.7,-74.9C16.8,-75.8,33.7,-70.7,43.3,-57.1Z" transform="translate(100 100)"></path>
-            </svg>
-          </div>
-        </div>
-
+    <!-- Swiper -->
+    <div class="swiper init-swiper">
+      <div class="swiper-wrapper align-items-center">
+        <div class="swiper-slide"><img src="assets/img/clients/client-1.webp" class="img-fluid" loading="lazy" alt="Client 1"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-2.webp" class="img-fluid" loading="lazy" alt="Client 2"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-3.webp" class="img-fluid" loading="lazy" alt="Client 3"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-4.webp" class="img-fluid" loading="lazy" alt="Client 4"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-5.webp" class="img-fluid" loading="lazy" alt="Client 5"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-6.webp" class="img-fluid" loading="lazy" alt="Client 6"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-7.webp" class="img-fluid" loading="lazy" alt="Client 7"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-8.webp" class="img-fluid" loading="lazy" alt="Client 8"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-9.webp" class="img-fluid" loading="lazy" alt="Client 9"></div>
       </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- /Swiper -->
 
-    </section><!-- /Call To Action Section -->
-	
+  </div>
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section">
+</section>
+<!-- /Clients Section -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.webp" class="img-fluid" loading="lazy" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.webp" class="img-fluid" loading="lazy" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.webp" class="img-fluid" loading="lazy" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.webp" class="img-fluid" loading="lazy" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.webp" class="img-fluid" loading="lazy" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.webp" class="img-fluid" loading="lazy" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.webp" class="img-fluid" loading="lazy" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.webp" class="img-fluid" loading="lazy" alt=""></div>
-	    <div class="swiper-slide"><img src="assets/img/clients/client-9.webp" class="img-fluid" loading="lazy" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-
-    </section><!-- /Services Section -->
 
     <!-- Pricing Section -->
     <section id="pricing" class="pricing section light-background">
@@ -1009,6 +772,14 @@
 <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
 <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
+<script src="assets/js/tracking.js" async></script>
+
+<!-- Tracking Scripts -->
+<script src="assets/js/tracking.js" defer></script>
+<!-- Tracking Fallbacks -->
+<noscript>
+  <img src="https://mc.yandex.ru/watch/102162382" style="position:absolute; left:-9999px;" alt="yandex-tracker" />
+</noscript>
 
 	
   <!-- FAQPage Schema JSON-LD -->
@@ -1048,43 +819,17 @@
 	<!-- Main JS File -->
   <script src="assets/js/main.js" defer></script>
 	
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-(function(){
-  var s1 = document.createElement("script"),
-      s0 = document.getElementsByTagName("script")[0];
-  s1.async = true;
-  s1.src = 'https://embed.tawk.to/685b628d5dc248190eeaea15/1iuifhutt';
-  s1.charset = 'UTF-8';
-  s1.setAttribute('crossorigin', '*');
-  s0.parentNode.insertBefore(s1, s0);
-})();
-</script>
 
-<!-- Custom Auto Trigger + Reposition -->
-<script type="text/javascript">
-Tawk_API = Tawk_API || {};
-Tawk_API.onLoad = function() {
-  // Auto-open chat setelah 5 detik
-  setTimeout(function(){
-    Tawk_API.maximize();
-    Tawk_API.addEvent('autogreeting');
-  }, 5000);
+<!-- Scroll Buttons -->
+<div class="scroll-controls">
+  <a href="#" class="scroll-btn scroll-up"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-btn scroll-down"><i class="bi bi-arrow-down-short"></i></a>
+</div>
 
-  // Geser posisi ke kiri
-  const repositionTawk = setInterval(() => {
-    const iframe = document.querySelector("iframe[title='chat widget']");
-    if (iframe) {
-      iframe.style.right = 'auto';
-      iframe.style.left = '10px'; // ubah sesuai kebutuhan
-      clearInterval(repositionTawk);
-    }
-  }, 500); // cek setiap 0.5 detik sampai iframe muncul
-};
-</script>
-<!--End of Tawk.to Script-->
-
+<!-- Tombol Chat -->
+<div class="chat-button" id="chatButton">
+  <i class="bi bi-chat-dots"></i>
+</div>
 
 </body>
 
