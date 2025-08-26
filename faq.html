@@ -137,45 +137,43 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+   <!-- ======= Header ======= -->
+<header id="header" class="header fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">mawlanaweb</h1>
-      </a>
+    <!-- LOGO -->
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="assets/img/mawlanaweb_header.webp" alt="Mawlanaweb Logo" class="logo-img">
+      <span class="brand">mawlanaweb</span>
+    </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="tentang-saya.html">Tentang Saya</a></li>
-          <li><a href="service-details.html">Detail Layanan</a></li>
-          <li class="dropdown"><a href="#"><span>Main Menu</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-               <li><a href="privacy-commitment.html">Privacy Commitment</a></li>
-			   <li><a href="faq.html">FAQ</a></li>
-              <li class="dropdown"><a href="#"><span>Service Detail</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="service-details-webdev.html">Web Developer</a></li>
-		  <li><a href="service-details-datanalyst.html">Data Analyst</a></li>
-		  <li><a href="service-details-itsupport.html">IT Support</a></li>
-                  <li><a href="service-details-database.html">Database</a></li>
-                  <li><a href="service-details-taxofficer.html">Tax Officer</a></li>
-                  <li><a href="service-details-legalitas.html">Legalitas Usaha</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="kontak-saya.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="navbar" role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html#hero">Home</a></li>
+        <li><a href="tentang-saya.html">About</a></li>
+        <li><a href="kontak-saya.html">Info</a></li>
+        <li><a href="service-details.html">Services</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="kontak-saya.html" class="active">Contact</a></li>
+      </ul>
+    </nav><!-- .navbar -->
 
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+    <!-- OVERLAY untuk mobile nav -->
+    <div id="nav-overlay"></div>
 
-    </div>
-  </header>
+   <!-- CTA BUTTON -->
+<a class="btn-getstarted d-none d-lg-inline-flex" href="kontak-saya.html#contact">
+  Ajukan Pertanyaan <i class="bi bi-chat-left-text ms-1"></i>
+</a>
+
+    <!-- MOBILE TOGGLE -->
+    <button class="mobile-nav-toggle bi bi-list"
+      aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false"></button>
+  </div>
+</header>
+<!-- ======= End Header ======= -->
+
 
   <main class="main">
 
@@ -191,11 +189,8 @@
       </ol>
     </nav>
   </div>
-</div><!-- End Page Title -->
-
-
-    <!-- Starter Section Section -->
-<section id="starter-section" class="starter-section section">
+</div>
+<!-- End Page Title -->
 
   <!-- Faq Section -->
     <section class="faq-9 faq section light-background" id="faq">
@@ -268,23 +263,36 @@
     </section><!-- /Faq Section -->
 	
 	<!-- Banner FAQ -->
-<section class="faq-banner" style="background-color: #00a8e8; padding: 60px 0;">
+<section class="faq-banner text-white" 
+         style="background: linear-gradient(135deg, #007BFF 0%, #0056D2 100%); padding: 70px 0;">
   <div class="container">
     <div class="row align-items-center">
+      
+      <!-- Text + CTA -->
       <div class="col-lg-6">
-        <h2 class="fw-bold mb-3 text-white">Dapatkan Jawaban Cepat atas Pertanyaan Anda</h2>
-        <p class="text-white">
+        <h2 class="fw-bold mb-3">
+          Dapatkan <span style="color: #FF6600;">Jawaban Cepat</span> atas Pertanyaan Anda
+        </h2>
+        <p>
           Kami telah merangkum pertanyaan yang sering diajukan klien kami, mencakup layanan, proses kerja, keamanan data, dan fleksibilitas. Temukan informasi yang Anda butuhkan dengan cepat.
         </p>
-        <a href="#faq" class="btn btn-outline-light mt-3">Lihat Daftar Pertanyaan</a>
+
+        <!-- CTA Buttons -->
+        <div class="d-flex flex-column flex-md-row gap-3 mt-3">
+          <a href="#faq" class="btn btn-outline-light">
+            <i class="bi bi-question-circle me-1"></i> Lihat FAQ
+          </a>
+          <a href="mailto:mawlanawebsite@gmail.com?subject=Pertanyaan%20Tambahan%20FAQ" 
+   class="btn text-white"
+   style="background-color: #FF6600; border-color: #FF6600;">
+  <i class="bi bi-envelope-paper me-1"></i> Masih Bingung? Hubungi Kami
+</a>
+        </div>
       </div>
-      <div class="col-lg-6 text-center mt-4 mt-lg-0">
-        <img src="assets/img/faq.webp" alt="Ilustrasi FAQ" class="img-fluid" style="max-height: 300px;" loading="lazy">
-      </div>
+
     </div>
   </div>
 </section>
-
 
 
   <footer id="footer" class="footer">
@@ -293,6 +301,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
+		  <img src="assets/img/mawlanaweb_header.webp" alt="Mawlanaweb Logo" class="logo-img">
             <span class="sitename">mawlanaweb</span>
           </a>
           <div class="footer-contact pt-3">
@@ -338,7 +347,7 @@
     </div>
 
      <div class="container copyright text-center mt-4">
-	  <img src="assets/img/footer.png" alt="Ilustrasi tampilan layanan Mawlanaweb pada perangkat mobile" class="img-fluid">
+	  <p> <img src="assets/img/footer.webp" alt="Ilustrasi kontak Mawlanaweb"/></p>
       <p>© <span>2025 Copyright</span> <strong class="px-1 sitename">Mawlanaweb</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
