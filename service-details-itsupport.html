@@ -70,45 +70,40 @@
 
 <body class="service-details-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <header id="header" class="header fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-         <h1 class="sitename">mawlanaweb</h1>
-      </a>
+    <!-- LOGO -->
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="assets/img/mawlanaweb_header.webp" alt="Mawlanaweb Logo" class="logo-img">
+      <span class="brand">mawlanaweb</span>
+    </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-         <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="tentang-saya.html">Tentang Saya</a></li>
-          <li><a href="service-details.html">Detail Layanan</a></li>
-          <li class="dropdown"><a href="#"><span>Main Menu</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-               <li><a href="privacy-commitment.html">Privacy Commitment</a></li>
-		<li><a href="faq.html">FAQ</a></li>
-              <li class="dropdown"><a href="#"><span>Service Detail</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="service-details-webdev.html">Web Developer</a></li>
-		  <li><a href="service-details-datanalyst.html">Data Analyst</a></li>
-		  <li><a href="service-details-itsupport.html">IT Support</a></li>
-                  <li><a href="service-details-database.html">Database</a></li>
-                  <li><a href="service-details-taxofficer.html">Tax Officer</a></li>
-                  <li><a href="service-details-legalitas.html">Legalitas Usaha</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="kontak-saya.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+    <!-- NAVIGATION (Desktop & Mobile) -->
+    <nav id="navbar" class="navbar" role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#hero" class="active scrollto">Home</a></li>
+        <li><a href="#about" class="scrollto">About</a></li>
+        <li><a href="#features" class="scrollto">Info</a></li>
+        <li><a href="#services" class="scrollto">Services</a></li>
+        <li><a href="#faq" class="scrollto">FAQ</a></li>
+        <li><a href="#contact" class="scrollto">Contact</a></li>
+      </ul>
+    </nav>
+	
+	<!-- OVERLAY untuk mobile nav -->
+    <div id="nav-overlay"></div>
 
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+    <!-- CTA BUTTON -->
+    <a class="btn-getstarted scrollto d-none d-lg-inline-flex" href="#features">
+      Mulai <i class="bi bi-arrow-right ms-1"></i>
+    </a>
 
-    </div>
-  </header>
+    <!-- MOBILE TOGGLE -->
+    <button class="mobile-nav-toggle bi bi-list"
+      aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false"></button>
+  </div>
+</header>
 
   <main class="main">
 
@@ -167,10 +162,10 @@
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
             <img src="assets/img/illustration-1.webp" alt="" class="img-fluid services-img">
             <h3>Solusi IT Support untuk Perusahaan Anda</h3>
-            <p>
+            <p style="text-align: justify;">
               Sebagai penyedia layanan IT Support, kami menawarkan solusi yang dirancang untuk membantu perusahaan Anda menjalankan operasional teknologi dengan lebih efisien, aman, dan minim gangguan. 
             </p>
-			<p>
+			<p style="text-align: justify;">
 			  Dengan mengutamakan komunikasi yang jelas, respon yang cepat, dan solusi yang tepat sasaran. Kami berusaha menjembatani kesenjangan antara sisi teknis dan sisi pengguna agar semua orang merasa nyaman dan produktif dalam bekerja, tanpa dibebani kendala teknologi.
 			</p>
 			 <h4>Mengapa memilih kami?</h4>
@@ -185,6 +180,10 @@
             <p>
               Memilih penyedia IT Support bukan hanya tentang siapa yang paling cepat memperbaiki masalah, tapi juga siapa yang mengerti kebutuhan bisnis Anda, dapat dipercaya, dan mampu menjaga kelangsungan operasional dengan tenang dan aman.
             </p>
+			<div class="cta-wrapper" data-aos="zoom-in" data-aos-delay="500">
+  <a href="kontak.html" class="cta-2025">
+    🚀 Konsultasi Gratis
+  </a>
           </div>
 
         </div>
@@ -201,6 +200,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
+		   <img src="assets/img/mawlanaweb_header.webp" alt="Mawlanaweb Logo" class="logo-img">
             <span class="sitename">mawlanaweb</span>
           </a>
           <div class="footer-contact pt-3">
@@ -246,7 +246,7 @@
     </div>
 
      <div class="container copyright text-center mt-4">
-	  <p> <img src="assets/img/footer.png" alt="Phone Mockup" class="img-fluid"></p>
+	  <p> <img src="assets/img/footer.webp" alt="Phone Mockup" class="img-fluid"></p>
       <p>© <span>2025 Copyright</span> <strong class="px-1 sitename">Mawlanaweb</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
