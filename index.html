@@ -132,49 +132,40 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+<header id="header" class="header fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-	    <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">mawlanaweb</h1>
-      </a>
-	    
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="/" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Info</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">FAQ</a></li>
-          <li class="dropdown"><a href="#"><span>Main Menu</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="privacy-commitment.html">Privacy Commitment</a></li>
-              <li class="dropdown"><a href="service-details.html"><span>Service Detail</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="service-details-webdev.html">Web Developer</a></li>
-		  <li><a href="service-details-datanalyst.html">Data Analyst</a></li>
-		  <li><a href="service-details-itsupport.html">IT Support</a></li>
-                  <li><a href="service-details-database.html">Database</a></li>
-                  <li><a href="service-details-taxofficer.html">Tax Officer</a></li>
-                  <li><a href="service-details-legalitas.html">Legalitas Usaha</a></li>
-                </ul>
-              </li>
-       
-          <li><a href="kontak-saya.html">Contact</a></li>
-        </ul>
-	<i class="mobile-nav-toggle d-xl-none bi bi-list" 
-   role="button" 
-   tabindex="0" 
-   aria-label="Buka atau tutup menu navigasi utama">
-   aria-controls="navmenu" 
-   aria-expanded="false">
-        </i>
-      </nav>    
-    <a class="btn-getstarted" href="index.html#about">Mulai</a>
-    </div>
-  </header>
+    <!-- LOGO -->
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="assets/img/mawlanaweb_header.webp" alt="Mawlanaweb Logo" class="logo-img">
+      <span class="brand">mawlanaweb</span>
+    </a>
+
+    <!-- NAVIGATION (Desktop & Mobile) -->
+    <nav id="navbar" class="navbar" role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#hero" class="active scrollto">Home</a></li>
+        <li><a href="#about" class="scrollto">About</a></li>
+        <li><a href="#features" class="scrollto">Info</a></li>
+        <li><a href="#services" class="scrollto">Services</a></li>
+        <li><a href="#faq" class="scrollto">FAQ</a></li>
+        <li><a href="#contact" class="scrollto">Contact</a></li>
+      </ul>
+    </nav>
+	
+	<!-- OVERLAY untuk mobile nav -->
+    <div id="nav-overlay"></div>
+
+    <!-- CTA BUTTON -->
+    <a class="btn-getstarted scrollto d-none d-lg-inline-flex" href="#features">
+      Mulai <i class="bi bi-arrow-right ms-1"></i>
+    </a>
+
+    <!-- MOBILE TOGGLE -->
+    <button class="mobile-nav-toggle bi bi-list"
+      aria-label="Toggle navigation" aria-controls="navbar" aria-expanded="false"></button>
+  </div>
+</header>
 
   <main class="main">
 
@@ -413,7 +404,16 @@
 				<p class="fst-italic">
                   MySQL - PostgreSQL - SQL Server
                 </p>
+				
+				 <!-- CTA Button -->
+      <div class="mt-3">
+        <a href="service-details-database.html" class="btn btn-primary btn-lg">
+          <i class="bi bi-database-check me-2"></i> Konsultasi Database Sekarang
+        </a>
+      </div>
+      <!-- End CTA Button -->
               </div>
+			  
               <div class="col-lg-6 order-1 order-lg-2 text-center">
                 <img src="assets/img/dba.webp" alt="DBA" class="img-fluid" loading="lazy" width="480" height="320">
               </div>
@@ -435,6 +435,13 @@
 				<p class="fst-italic">
                   Coretax - e-Filling DJP - PPH 21 TER - Excel
                 </p>
+				<!-- CTA Button -->
+      <div class="mt-3">
+        <a href="service-details-taxofficer.html" class="btn btn-warning btn-lg">
+          <i class="bi bi-file-earmark-text me-2"></i> Konsultasi Pajak Sekarang
+        </a>
+      </div>
+      <!-- End CTA Button -->
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
                 <img src="assets/img/to.webp" alt="Tax Officer" class="img-fluid" loading="lazy" width="480" height="320">
@@ -458,6 +465,13 @@
                 <p class="fst-italic">
                   Google Workspace - Trello - Notion - Zoom
                 </p>
+				 <!-- CTA Button -->
+      <div class="mt-3">
+        <a href="service-details-itsupport.html" class="btn btn-success btn-lg">
+          <i class="bi bi-person-workspace me-2"></i> Dapatkan Virtual Assistant
+        </a>
+      </div>
+      <!-- End CTA Button -->
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
                 <img src="assets/img/va.webp" alt="Virtual Assistant" class="img-fluid" loading="lazy" width="480" height="320">
@@ -566,55 +580,59 @@
     </section><!-- /Features 2 Section -->
 
          <!-- Call To Action Section -->
-<section id="call-to-action" class="call-to-action section">
-
-  <div class="container" data-aos="fade-up">
-
-    <!-- Background Shapes -->
-    <div class="shape shape-1"></div>
-    <div class="shape shape-2"></div>
-    <div class="shape shape-3"></div>
-    <div class="dots dots-1"></div>
-    <div class="dots dots-2"></div>
-
-    <div class="content">
-      <h3>Tingkatkan Bisnis Anda Bersama Kami</h3>
-      <p>Kami membantu UMKM, Startup, dan Perusahaan dalam transformasi digital yang efektif.</p>
-      <a href="#contact" class="btn btn-primary">Hubungi Kami</a>
+<section id="cta-card" class="cta-card-section d-flex align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="cta-card text-center shadow-lg">
+          <h2 class="fw-bold mb-3">
+            🚀 Saatnya <span class="highlight">Digitalisasikan Bisnis</span> Anda
+          </h2>
+          <p class="mb-4">
+            Dengan dukungan <strong>Mawlanaweb</strong>, Anda dapat membangun solusi digital
+            mulai dari website, database, hingga konsultasi pajak & legalitas usaha.
+            Fokus Anda pada bisnis, biarkan teknologi kami yang urus.
+          </p>
+          <a href="kontak-saya.html" class="btn btn-gradient btn-lg px-4">
+            Hubungi Kami Sekarang
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
+</section>
+
 
   </div>
 
-</section>
-<!-- /Call To Action Section -->
-
-
-<!-- Clients Section -->
 <section id="clients" class="clients section">
-
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <!-- Swiper -->
-    <div class="swiper init-swiper">
-      <div class="swiper-wrapper align-items-center">
-        <div class="swiper-slide"><img src="assets/img/clients/client-1.webp" class="img-fluid" loading="lazy" alt="Client 1"></div>
-        <div class="swiper-slide"><img src="assets/img/clients/client-2.webp" class="img-fluid" loading="lazy" alt="Client 2"></div>
-        <div class="swiper-slide"><img src="assets/img/clients/client-3.webp" class="img-fluid" loading="lazy" alt="Client 3"></div>
-        <div class="swiper-slide"><img src="assets/img/clients/client-4.webp" class="img-fluid" loading="lazy" alt="Client 4"></div>
-        <div class="swiper-slide"><img src="assets/img/clients/client-5.webp" class="img-fluid" loading="lazy" alt="Client 5"></div>
-        <div class="swiper-slide"><img src="assets/img/clients/client-6.webp" class="img-fluid" loading="lazy" alt="Client 6"></div>
-        <div class="swiper-slide"><img src="assets/img/clients/client-7.webp" class="img-fluid" loading="lazy" alt="Client 7"></div>
-        <div class="swiper-slide"><img src="assets/img/clients/client-8.webp" class="img-fluid" loading="lazy" alt="Client 8"></div>
-        <div class="swiper-slide"><img src="assets/img/clients/client-9.webp" class="img-fluid" loading="lazy" alt="Client 9"></div>
+  <header class="section-header" data-aos="fade-up">
+  <h2 class="gradient-text shimmer" data-aos="zoom-in" data-aos-delay="200">
+    Dipercaya oleh Mitra Strategis
+  </h2>
+  <p class="fade-in" data-aos="fade-up" data-aos-delay="400">
+  Kemitraan strategis dengan pelaku usaha, publik, dan swasta menuju masa depan digital yang lebih baik.</p>
+</header>
+
+
+    <div class="swiper clients-marquee">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/img/clients/client-1.webp" alt="Client 1 - Technology Partner" loading="lazy"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-2.webp" alt="Client 2 - Digital Agency" loading="lazy"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-3.webp" alt="Client 3 - E-commerce Partner" loading="lazy"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-4.webp" alt="Client 4 - Finance" loading="lazy"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-5.webp" alt="Client 5 - Education" loading="lazy"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-6.webp" alt="Client 6 - Creative Studio" loading="lazy"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-7.webp" alt="Client 7 - Startup" loading="lazy"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-8.webp" alt="Client 8 - Media Agency" loading="lazy"></div>
+        <div class="swiper-slide"><img src="assets/img/clients/client-9.webp" alt="Client 9 - Global Brand" loading="lazy"></div>
       </div>
-      <div class="swiper-pagination"></div>
     </div>
-    <!-- /Swiper -->
 
   </div>
-
 </section>
-<!-- /Clients Section -->
 
 
     <!-- Pricing Section -->
@@ -704,7 +722,8 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">mawlanaweb</span>
+		  <img src="assets/img/mawlanaweb_header.webp" alt="Mawlanaweb Logo" class="logo-img">
+          <span class="sitename">mawlanaweb</span>
           </a>
           <div class="footer-contact pt-3">
             <p>Jl. Harapan - Punge Blang Cut Kec. Jaya Baru</p>
@@ -719,9 +738,9 @@
           <h4>Useful Links</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#about">About</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#features">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#pricing">FAQ</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="tentang-saya.html">About</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="service-details.html">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="faq.html">FAQ</a></li>
           </ul>
         </div>
 
@@ -749,7 +768,7 @@
     </div>
 
      <div class="container copyright text-center mt-4">
-      <p> <img src="assets/img/footer.png" alt="Phone Mockup" class="img-fluid"></p>
+      <p> <img src="assets/img/footer.webp" alt="Phone Mockup" class="img-fluid"></p>
       <p>© <span>2025 Copyright</span> <strong class="px-1 sitename">Mawlanaweb</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -772,11 +791,30 @@
 <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
 <script src="assets/vendor/purecounter/purecounter_vanilla.js" defer></script>
-<script src="assets/js/tracking.js" async></script>
+
 
 <!-- Tracking Scripts -->
 <script src="assets/js/tracking.js" defer></script>
 <!-- Tracking Fallbacks -->
+<script>
+  if ("requestIdleCallback" in window) {
+    requestIdleCallback(function () {
+      var s = document.createElement("script");
+      s.src = "assets/js/tracking.js";
+      s.defer = true;
+      document.body.appendChild(s);
+    });
+  } else {
+    // fallback kalau browser tidak support
+    window.addEventListener("load", function () {
+      var s = document.createElement("script");
+      s.src = "assets/js/tracking.js";
+      s.defer = true;
+      document.body.appendChild(s);
+    });
+  }
+</script>
+
 <noscript>
   <img src="https://mc.yandex.ru/watch/102162382" style="position:absolute; left:-9999px;" alt="yandex-tracker" />
 </noscript>
