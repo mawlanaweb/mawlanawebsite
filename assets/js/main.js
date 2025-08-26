@@ -281,3 +281,65 @@ document.querySelectorAll('.faq-item').forEach(item => {
     item.classList.toggle('faq-active');
   });
 });
+
+// Header Scroll Effect
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('#header');
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+// Mobile Nav Toggle + Overlay
+const navToggle = document.querySelector('.mobile-nav-toggle');
+const navMenu = document.querySelector('#navbar ul');
+const navOverlay = document.querySelector('#nav-overlay');
+
+function closeNav() {
+  navMenu.classList.remove('show');
+  navToggle.classList.add('bi-list');
+  navToggle.classList.remove('bi-x');
+  navToggle.setAttribute('aria-expanded', false);
+  navOverlay.classList.remove('active');
+}
+
+navToggle.addEventListener('click', () => {
+  const isOpen = navMenu.classList.contains('show');
+  if (isOpen) {
+    closeNav();
+  } else {
+    navMenu.classList.add('show');
+    navToggle.classList.remove('bi-list');
+    navToggle.classList.add('bi-x');
+    navToggle.setAttribute('aria-expanded', true);
+    navOverlay.classList.add('active');
+  }
+});
+
+// Klik di luar menu (overlay) -> tutup
+navOverlay.addEventListener('click', () => {
+  closeNav();
+});
+
+// Klik link di dalam menu -> tutup juga (opsional)
+document.querySelectorAll('#navbar ul a').forEach(link => {
+  link.addEventListener('click', () => closeNav());
+});
+
+new Swiper(".clients-marquee", {
+  slidesPerView: 5,   // tampil 5 logo sekaligus di desktop
+  spaceBetween: 40,
+  loop: true,
+  speed: 4000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: { slidesPerView: 2, spaceBetween: 20 },  // HP kecil
+    640: { slidesPerView: 3, spaceBetween: 30 },  // tablet
+    1024: { slidesPerView: 5, spaceBetween: 40 }, // desktop
+  }
+});
