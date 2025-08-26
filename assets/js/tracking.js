@@ -1,19 +1,15 @@
 // =============================
-// 🔹 Ahrefs Analytics
-// =============================
-(function(){
-  var s = document.createElement("script");
-  s.src = "https://analytics.ahrefs.com/analytics.js";
-  s.async = true;
-  s.setAttribute("data-key","DQKNs2xEtMZ0N3ML7xNMMQ");
-  document.body.appendChild(s);
-})();
-
-// =============================
 // 🔹 Kombinasi Tracker
-// (Yandex Metrika, Clarity, GTM)
+// (Ahrefs, Yandex Metrika, Clarity, GTM)
 // =============================
 function loadTrackers() {
+  // === AHREFS ANALYTICS ===
+  var ahrefsScript = document.createElement("script");
+  ahrefsScript.src = "https://analytics.ahrefs.com/analytics.js";
+  ahrefsScript.async = true;
+  ahrefsScript.setAttribute("data-key","DQKNs2xEtMZ0N3ML7xNMMQ");
+  document.body.appendChild(ahrefsScript);
+
   // === YANDEX METRIKA ===
   var ymScript = document.createElement('script');
   ymScript.src = "https://mc.yandex.ru/metrika/tag.js";
@@ -66,11 +62,13 @@ window.addEventListener('load', function () {
   setTimeout(loadTrackers, 3000);
 });
 
-// === Lazy Load Tawk.to Chat ===
+// =============================
+// 🔹 Lazy Load Tawk.to Chat
+// =============================
 function loadTawkTo() {
   if (window.Tawk_API) return; // sudah load, jangan ulang
 
-  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  var Tawk_API = window.Tawk_API || {}, Tawk_LoadStart = new Date();
   (function(){
     var s1 = document.createElement("script"),
         s0 = document.getElementsByTagName("script")[0];
@@ -81,33 +79,30 @@ function loadTawkTo() {
     s0.parentNode.insertBefore(s1, s0);
   })();
 
-  // Setelah Tawk berhasil diload
+  // Setelah Tawk berhasil diload → hanya rapikan posisi
   window.Tawk_API = window.Tawk_API || {};
   window.Tawk_API.onLoad = function() {
-    // Auto open chat langsung setelah load
-    Tawk_API.maximize();
-    Tawk_API.addEvent('chat_button_clicked');
-
-    // Reposition ke kiri
     const repositionTawk = setInterval(() => {
       const iframe = document.querySelector("iframe[title='chat widget']");
       if (iframe) {
         iframe.style.left = 'auto';
-		iframe.style.right = '10px';
+        iframe.style.right = '10px';
         clearInterval(repositionTawk);
       }
     }, 500);
   };
 }
 
-// Event klik tombol
+// Event klik tombol chat
 document.addEventListener("DOMContentLoaded", function(){
   const chatButton = document.getElementById("chatButton");
   if (chatButton) {
     chatButton.addEventListener("click", function(){
       loadTawkTo();
       chatButton.style.display = "none"; // sembunyikan tombol setelah klik
+      if (window.Tawk_API && window.Tawk_API.addEvent) {
+        window.Tawk_API.addEvent('chat_button_clicked');
+      }
     });
   }
 });
-
